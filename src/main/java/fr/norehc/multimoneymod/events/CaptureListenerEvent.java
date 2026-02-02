@@ -30,7 +30,9 @@ public class CaptureListenerEvent {
 
 
                 DropModel param = dataMoney.dropModel.get("capture");
-                if (param.selectedPokemon.get(0).equalsIgnoreCase("all")) {
+                if(param.selectedPokemon.get(0).equalsIgnoreCase("none")) {
+                    isOk = false;
+                } else if (param.selectedPokemon.get(0).equalsIgnoreCase("all")) {
                     if (param.selectedPalette.get(0).equalsIgnoreCase("all")) {
                         isOk = true;
                     } else {
