@@ -24,11 +24,11 @@ public class AutoSave {
     }
 
     private static void saveAllPlayerStats() {
-        MultiMoneyMod.LOGGER.info("[PityLegendary] Sauvegarde automatique des stats des joueurs...");
+        MultiMoneyMod.LOGGER.info("[MultiMoney] Sauvegarde automatique des stats des joueurs...");
 
         MultiMoneyMod.playerMoney.forEach(PlayerMoneyFileManager::saveStats);
 
-        MultiMoneyMod.LOGGER.info("[PityLegendary] Fin de la sauvegarde automatique des stats des joueurs...");
+        MultiMoneyMod.LOGGER.info("[MultiMoney] Fin de la sauvegarde automatique des stats des joueurs...");
 
     }
 }
